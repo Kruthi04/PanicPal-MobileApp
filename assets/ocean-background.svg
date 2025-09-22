@@ -1,0 +1,38 @@
+<svg width="400" height="800" viewBox="0 0 400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#1E90FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006994;stop-opacity:1" />
+    </linearGradient>
+    <path id="wave" d="M0,20 Q100,0 200,20 T400,20 V0 H0 Z" fill="rgba(255,255,255,0.1)"/>
+  </defs>
+  
+  <!-- Ocean background -->
+  <rect width="400" height="800" fill="url(#oceanGradient)"/>
+  
+  <!-- Animated waves -->
+  <g opacity="0.3">
+    <use href="#wave" y="100"/>
+    <use href="#wave" y="150" transform="scale(-1,1) translate(-400,0)"/>
+    <use href="#wave" y="200"/>
+    <use href="#wave" y="250" transform="scale(-1,1) translate(-400,0)"/>
+    <use href="#wave" y="300"/>
+    <use href="#wave" y="350" transform="scale(-1,1) translate(-400,0)"/>
+    <use href="#wave" y="400"/>
+    <use href="#wave" y="450" transform="scale(-1,1) translate(-400,0)"/>
+    <use href="#wave" y="500"/>
+    <use href="#wave" y="550" transform="scale(-1,1) translate(-400,0)"/>
+    <use href="#wave" y="600"/>
+    <use href="#wave" y="650" transform="scale(-1,1) translate(-400,0)"/>
+  </g>
+  
+  <!-- Subtle light rays -->
+  <g opacity="0.1">
+    <path d="M50,0 L70,800 L90,800 L70,0 Z" fill="white"/>
+    <path d="M150,0 L170,800 L190,800 L170,0 Z" fill="white"/>
+    <path d="M250,0 L270,800 L290,800 L270,0 Z" fill="white"/>
+    <path d="M350,0 L370,800 L390,800 L370,0 Z" fill="white"/>
+  </g>
+</svg>
